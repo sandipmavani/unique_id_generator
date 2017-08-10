@@ -1,0 +1,27 @@
+{
+  "name": "unique_id_generator",
+  "version": "1.0.1",
+  "description": "generate unique ID (32bit) based on Date.now() and MD5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandipmavani/unique_id_generator.git"
+  },
+  "keywords": [
+    "unique",
+    "id",
+    "generate",
+    "generator",
+    "uid",
+    "uniqueid"	
+  ],
+  "author": "sandip mavani <mavanisandip94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandipmavani/unique_id_generator/issues"
+  },
+  "homepage": "https://github.com/sandipmavani/unique_id_generator#readme"
+}
