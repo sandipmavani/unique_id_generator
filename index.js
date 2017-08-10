@@ -18,3 +18,13 @@ function MD5(string) {
     md5crypt.update(string);
     return md5crypt.digest('hex');
 }
+function str_shuffle(string) {
+    var parts = string.split('');
+    for (var i = parts.length; i > 0;) {
+        var random = parseInt(Math.random() * i);
+        var temp = parts[--i];
+        parts[i] = parts[random];
+        parts[random] = temp;
+    }
+    return parts.join('');
+}
