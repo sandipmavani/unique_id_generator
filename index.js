@@ -4,17 +4,17 @@ let previous = 0;
 
 module.exports = (opts) => {
 
-    opts = Object.assign({}, {prefix:"", suffix:""}, opts);
+    var currentTime = new Date().getTime();
 
-    var id = Date.now();
+    var randNumber = Math.random();
 
-    if (id <= previous) {
-        id = ++previous;
-    } else {
-        previous = id;
-    }
+    var shuffledString = str_shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
 
-    if(previous === Number.MAX_SAFE_INTEGER){previous = 0};
-
-    return opts.prefix + id + opts.suffix;
+    return MD5(currentTime + randNumber + shuffledString);
+}
+function MD5(string) {
+    var crypto = require('crypto');
+    var md5crypt = crypto.createHash('md5');
+    md5crypt.update(string);
+    return md5crypt.digest('hex');
 }

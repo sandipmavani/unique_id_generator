@@ -7,31 +7,15 @@ This function is meant to return an unique ID using the value of Date.now(), it 
 ## How to use it?
 1.- Install it in your project:
 
-`npm install unique-id-generator -S`
+`npm install unique_id_generator --save`
 
 2.- Require it:
 
-`var generateID = require("unique-id-generator");`
+`var generateID = require("unique_id_generator");`
 
 3.- Use it:
 
 ```js
-var id = generateID({prefix:"id-"});
-//generates something like id-1476734792457
+var id = generateID();
+//generates something like 
 ```
-
-4.- Profit.
-
-## API
-### uniqueIdGenerator([options])
-
-### options
-#### prefix
-Type: `String` <br>
-
-Adds specified `prefix` at the beginning of the generated ID.
-
-#### suffix
-Type: `String` <br>
-
-Adds specified `suffix` at the end of the generated ID.

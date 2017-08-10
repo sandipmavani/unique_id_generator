@@ -16,12 +16,16 @@
     "generate",
     "generator",
     "uid",
-    "uniqueid"	
+    "uniqueid"
   ],
   "author": "sandip mavani <mavanisandip94@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sandipmavani/unique_id_generator/issues"
   },
-  "homepage": "https://github.com/sandipmavani/unique_id_generator#readme"
+  "homepage": "https://github.com/sandipmavani/unique_id_generator#readme",
+  "dependencies": {
+    "crypto": "0.0.3",
+    "md5": "^2.2.1"
+  }
 }
