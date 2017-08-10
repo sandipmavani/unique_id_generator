@@ -1,6 +1,6 @@
 {
   "name": "unique_id_generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "generate unique ID (32bit) based on Date.now() and MD5",
   "main": "index.js",
   "scripts": {
